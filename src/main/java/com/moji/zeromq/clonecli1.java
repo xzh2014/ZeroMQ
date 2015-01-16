@@ -31,7 +31,7 @@ public class clonecli1 {
             System.out.println("receiving " + kvMsg);
             sequence.incrementAndGet();
 		}
-        ctx.destroy();
+        ctx.destroy();   
 	}
 
 	public static void main(String[] args) {
