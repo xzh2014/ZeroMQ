@@ -15,7 +15,7 @@ public class PublisherService {
 		publisher.bind("tcp://127.0.0.1:5559");
 		
 		try {
-			Thread.sleep(2000);
+			Thread.sleep(2000);  
 			publisher.send(A+"0:885");
 			publisher.send(B+"886:1770");
 			publisher.send(C+"1771:2657");

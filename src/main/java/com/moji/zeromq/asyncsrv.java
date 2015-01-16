@@ -36,7 +36,7 @@ public class asyncsrv
 
             //  Set random identity to make tracing easier
             String identity = String.format("%04X-%04X", rand.nextInt(), rand.nextInt());
-            client.setIdentity(identity.getBytes());
+            client.setIdentity(identity.getBytes());//设置身份已成为持久套接字?
             client.connect("tcp://localhost:5570");
 
             PollItem[] items = new PollItem[] { new PollItem(client, Poller.POLLIN) };
